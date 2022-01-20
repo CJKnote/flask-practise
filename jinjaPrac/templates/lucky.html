@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Lucky Numbers!{% endblock %}
+
+{% block content %}
+<h1>Hello!</h1>
+<p>Your lucky number is {{ lucky_num }}</p>
+
+{% if lucky_num == 3 %}
+<h2>that's my lucky number too!</h2>
+<img src="https://media3.giphy.com/media/M9OPJEiFXirAeqv7sb/giphy.gif" alt="">
+{% else %}
+<h2>I don't like {{lucky_num}}</h2>
+<img src="https://i0.wp.com/russianmachineneverbreaks.com/wp-content/uploads/2018/05/capssad8-sbnation.gif?ssl=1"
+    alt="">
+{% endif %}
+{% endblock %}
