@@ -1,0 +1,12 @@
+<html>
+<form action="/story">
+    {% for wordpart in prompts %}
+    <p>
+        <label for="{{wordpart}}">{{wordpart}}</label>
+        <input type="text" placeholder={{wordpart}} name="{{wordpart}}">
+    </p>
+    {% endfor %}
+    <button>Submit</button>
+</form>
+
+</html>
